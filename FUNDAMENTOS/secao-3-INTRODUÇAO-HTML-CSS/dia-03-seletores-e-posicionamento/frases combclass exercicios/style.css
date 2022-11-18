@@ -1,0 +1,66 @@
+ol li {
+  background-color: yellow;
+}
+
+ol li:nth-child(even) {
+  color: green;
+}
+
+ol li:nth-child(odd) {
+  text-transform: uppercase;
+}
+
+h1, h3 {
+  color: red;
+}
+
+h1 em, h3 em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+.bluefont {
+  color: blue;
+
+}
+
+.bluefont .java {
+  background-color: pink;
+}
+
+.allies li:hover {
+  font-weight: bold;
+}
+
+.allies li a[href="https://pt.stackoverflow.com/"]:hover {
+  color: orange;
+}
+
+.allies li a[href="https://www.w3schools.com/"]:hover {
+color: green;
+}
+
+.allies li a[href="https://developer.mozilla.org/pt-BR/"]:hover {
+color: black;
+}
+
+.allies li a[href="https://devdocs.io/"]:hover {
+color: yellow;
+}
+
+.allies li a[href="https://app.betrybe.com/"]:hover {
+color: green;
+}
+
+
+
+
+
