@@ -1,0 +1,29 @@
+div:hover {
+ border: 10px solid black;
+}
+
+.primary {
+  background-color: red;
+}
+
+.secondary {
+  background-color: green;
+
+}
+
+.complementary {
+  background-color: purple;
+  font-size: 30px;
+}
+
+.dark {
+  background-color: rgb(44, 43, 43);
+}
+
+.light {
+  background-color: rgb(243, 176, 176)
+}
+
+div h3 {
+  font-style: italic;
+}
