@@ -1,0 +1,17 @@
+
+.header h1, .header p {
+text-align: center;
+}
+
+.header li:hover {
+  background-color: aquamarine;
+  
+}
+
+.header li:active {
+  color: blueviolet;
+}
+
+li {
+  list-style: none;
+}
