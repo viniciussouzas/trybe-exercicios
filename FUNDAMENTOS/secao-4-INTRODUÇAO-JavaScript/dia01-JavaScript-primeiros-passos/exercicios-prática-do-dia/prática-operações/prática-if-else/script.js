@@ -29,4 +29,14 @@ if (value > 0) {
   console.log("zero");
 }
 
+const firstAngle = 20;
+const secondAngle = 40;
+const thirdAngle = 70;
 
+if (firstAngle > 0 && secondAngle > 0 && thirdAngle > 0 && firstAngle + secondAngle + thirdAngle == 180) {
+  console.log(true);
+} else if (firstAngle > 0 && secondAngle > 0 && thirdAngle > 0 && firstAngle + secondAngle + thirdAngle !== 180) {
+  console.log(false);
+} else {
+  console.log('error');
+}
