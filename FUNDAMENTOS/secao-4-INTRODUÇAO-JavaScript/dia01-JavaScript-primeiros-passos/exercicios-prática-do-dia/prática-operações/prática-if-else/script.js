@@ -58,3 +58,28 @@ if ( grade >= 90 && grade <= 100) {
 } else {
   console.log("Error, grade insert is not valid!");
 }
+
+const number1 = 32;
+const number2 = 43;
+const number3 = 21;
+
+let verifyEven = false;
+
+if ((number1 % 2 === 0 || number2 % 2 === 0 || number3 % 2 === 0)) {
+  verifyEven = true;
+}
+
+console.log(verifyEven);
+
+
+const number4 = 7;
+const number5 = 10;
+const number6 = 13;
+
+let verifyOdd = false;
+
+if ((number4 % 2 !== 0 || number5 % 2 !== 0 || number6 % 2 !== 0)) {
+  verifyOdd = true;
+}
+
+console.log(verifyOdd);
