@@ -83,3 +83,45 @@ if ((number4 % 2 !== 0 || number5 % 2 !== 0 || number6 % 2 !== 0)) {
 }
 
 console.log(verifyOdd);
+
+const productCost = 50;
+const sellingPrice = 100;
+
+if (productCost >= 0 && sellingPrice >= 0) {
+  const totalCost = productCost * 1.2;
+  const profit = (sellingPrice - totalCost) * 1000;
+  console.log(profit);
+} else {
+  console.log("Error, values cannot be negative.");
+}
+
+let aliquotINSS = "";
+let aliquotIR = "";
+
+const rawSalary = 4500.00;
+
+if (rawSalary <= 1556.94) {
+  aliquotINSS = rawSalary * 0.08;
+} else if (rawSalary <= 2594.92) {
+  aliquotINSS = rawSalary * 0.09;
+} else if (rawSalary <= 5189.82) {
+  aliquotINSS = rawSalary * 0.11;
+} else {
+  aliquotINSS = 570.88;
+}
+
+const realSalary = rawSalary - aliquotINSS;
+
+if (realSalary <= 1903.98) {
+  aliquotIR = 0;
+} else if (realSalary <= 2826.65) {
+  aliquotIR = (realSalary * 0.075) - 142.80;
+} else if (realSalary <= 3751.05) {
+  aliquotIR = (realSalary * 0.15) - 354.80;
+} else if (realSalary <= 4664.68) {
+  aliquotIR = (realSalary * 0.225) - 636.13;
+} else if (realSalary > 4664.68) {
+  aliquotIR = (realSalary * 0.275) - 869.36;
+}
+
+console.log("Your salary is " + (realSalary - aliquotIR));
