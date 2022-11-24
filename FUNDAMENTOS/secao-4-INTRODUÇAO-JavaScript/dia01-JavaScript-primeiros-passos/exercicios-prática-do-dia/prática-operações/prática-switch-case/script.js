@@ -33,5 +33,5 @@ switch (result) {
   break;
 
   default:
-    console.log("Error the value insert is invalid for Chess Pieces.")
+    console.log("Error, the value insert is invalid for Chess Pieces.")
 } 

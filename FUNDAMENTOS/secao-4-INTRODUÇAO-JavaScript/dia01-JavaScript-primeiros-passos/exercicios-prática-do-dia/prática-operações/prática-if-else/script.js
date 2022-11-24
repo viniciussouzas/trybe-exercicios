@@ -2,9 +2,9 @@ const a = 2;
 const b = 5;
 
 if (a > b) {
-console.log("2 é maior que 5");
+console.log(a + " é maior que " + b + ".");
 } else {
-  console.log("5 é maior que 2");
+  console.log(b + " é maior que " + a + ".");
 };
 
 const c = 4;
@@ -12,21 +12,21 @@ const d = 7;
 const e = 8;
 
 if (c > d && c > e) {
-  console.log("4 é o maior dos três números");
+  console.log(c + " é o maior dos três números.");
 } else if (d > c && d > e) {
-  console.log("7 é o maior dos três números");
+  console.log(d + " é o maior dos três números.");
 } else {
-  console.log("8 é o maior dos três números");
+  console.log(e + " é o maior dos três números.");
 }
 
 let value = 0
 
 if (value > 0) {
-  console.log("positive");
+  console.log("The value insert is positive.");
 } else if (value < 0) {
-  console.log("negative");
+  console.log("The value insert is negative.");
 } else {
-  console.log("zero");
+  console.log("Undefined, the value insert is zero.");
 }
 
 const firstAngle = 20;
@@ -39,4 +39,22 @@ if (firstAngle > 0 && secondAngle > 0 && thirdAngle > 0 && firstAngle + secondAn
   console.log(false);
 } else {
   console.log('error');
+}
+
+let grade = 77;
+
+if ( grade >= 90 && grade <= 100) {
+  console.log("Excellent, your grade is A!");
+} else if ( grade >= 80 && grade < 90) {
+  console.log("Congrats, your grade is B!");
+} else if ( grade >= 70 && grade < 80) {
+  console.log("Good, your grade is C!");
+} else if ( grade >= 60 && grade < 70) {
+  console.log("Keep improving, your grade is D!");
+} else if ( grade >= 50 && grade < 60) {
+  console.log("Don't give up, your grade is E!");
+} else if ( grade > 0 && grade < 50) {
+  console.log("Keep trying, your grade is F!");
+} else {
+  console.log("Error, grade insert is not valid!");
 }
