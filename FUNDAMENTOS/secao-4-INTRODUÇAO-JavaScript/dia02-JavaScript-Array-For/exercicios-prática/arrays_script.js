@@ -77,3 +77,11 @@ for (index = 1; index <= 25; index += 1) {
 }
 
 console.log(groupNumbers);
+
+console.log("**************");
+
+for (index = 0; index < groupNumbers.length; index += 1) {
+ console.log(groupNumbers[index] / 2);
+}
+
+
