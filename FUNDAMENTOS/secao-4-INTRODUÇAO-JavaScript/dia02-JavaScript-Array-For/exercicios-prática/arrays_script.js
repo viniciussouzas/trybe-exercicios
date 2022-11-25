@@ -56,3 +56,15 @@ if (oddNumbers === 0) {
   console.log(oddNumbers);
 }
 
+console.log("******************");
+
+let smallestNumber = numbers[0];
+
+for (index = 1; index < numbers.length; index += 1) {
+  if (smallestNumber > numbers[index]) {
+    smallestNumber = numbers[index];
+  }
+}
+
+console.log(smallestNumber);
+
