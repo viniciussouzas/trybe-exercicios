@@ -68,3 +68,12 @@ for (index = 1; index < numbers.length; index += 1) {
 
 console.log(smallestNumber);
 
+console.log("**********");
+
+let groupNumbers = [];
+
+for (index = 1; index <= 25; index += 1) {
+  groupNumbers.push(index);
+}
+
+console.log(groupNumbers);
