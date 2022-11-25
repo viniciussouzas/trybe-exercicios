@@ -41,3 +41,18 @@ for (let index = 1; index < numbers.length; index += 1) {
 console.log(highestNumber);
 
 console.log("***************");
+
+let oddNumbers = 0;
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] % 2 !== 0) {
+    oddNumbers += 1;
+  }
+}
+
+if (oddNumbers === 0) {
+  console.log("Nenhum valor ímpar foi encontrado.");
+} else {
+  console.log(oddNumbers);
+}
+
