@@ -27,6 +27,8 @@ console.log("Soma de a + b = " + sum() + "; " + "Subtração de a - b = " + subt
 
 console.log('***********');
 
+// segundo-exercicio
+
 const number1 = 37;
 const number2 = 20;
 
@@ -43,3 +45,17 @@ function biggest () {
 console.log(biggest());
 
 console.log("***************");
+
+// terceiro-exercicio
+
+function biggestOfThree (num1, num2, num3) {
+  if (num1 > num2 && num1 > num3) {
+    return num1 + ' é o maior dos 3 números!';
+  } else if (num2 > num1 && num2 > num3) {
+    return num2 + ' é o maior dos 3 números!';
+  } else {
+    return num3 + ' é o maior dos 3 números!';
+  }
+};
+
+console.log(biggestOfThree(32, 54, 12));
