@@ -59,3 +59,19 @@ function biggestOfThree (num1, num2, num3) {
 };
 
 console.log(biggestOfThree(32, 54, 12));
+
+console.log("***********");
+
+// quarto-exercicio
+
+function verifySignal (value) {
+  if (value > 0) {
+    return "positive";
+  } else if (value < 0) {
+    return "negative";
+  } else {
+    return "zero";
+  }
+};
+
+console.log(verifySignal(0));
