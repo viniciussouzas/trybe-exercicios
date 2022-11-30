@@ -40,7 +40,7 @@ function biggest () {
   } else {
     return number1 + " e " + number2 + " são iguais!";
   }
-}
+};
 
 console.log(biggest());
 
@@ -75,3 +75,19 @@ function verifySignal (value) {
 };
 
 console.log(verifySignal(0));
+
+console.log("**********");
+
+// quinto-exercicio
+
+function verifyTriangle (angle1, angle2, angle3) {
+  if (angle1 + angle2 + angle3 === 180) {
+    return true;
+  } else if (angle1 < 0  || angle2 < 0 ||angle3 < 0) {
+    return "Error, invalid angle inserted";
+  } else {
+    return false;
+  }
+};
+
+console.log(verifyTriangle(-60, 60, 60));
