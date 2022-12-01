@@ -102,3 +102,24 @@ console.log("************");
  console.log(sumAllNumbers(37));
 
  console.log("************");
+
+ // string word & string ending exercicio
+
+ function verifyWordEnding (word, endingWord) {
+  word = word.split('');
+  endingWord = endingWord.split('');
+  let verifier = true;
+
+for (let index = 0; index < endingWord.length; index += 1) {
+  if (word[word.length - endingWord.length + index] != endingWord[index]) {
+    verifier = false;
+    }
+  }
+  return verifier;
+}
+
+console.log(verifyWordEnding('vinicius', 'cius'));
+
+console.log(verifyWordEnding('programação', 'acao'));
+
+console.log('************');
