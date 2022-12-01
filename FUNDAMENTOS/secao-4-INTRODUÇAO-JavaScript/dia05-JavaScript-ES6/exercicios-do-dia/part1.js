@@ -6,3 +6,4 @@ function imprimeIdade() {
 imprimeIdade()
 
 console.log('***********');
+
