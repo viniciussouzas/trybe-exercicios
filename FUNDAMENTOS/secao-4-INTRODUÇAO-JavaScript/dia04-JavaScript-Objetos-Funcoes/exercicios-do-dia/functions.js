@@ -61,3 +61,30 @@ console.log("************");
  console.log(biggestName(['Ana', 'João', 'Vinícius', 'Felipe']));
 
  console.log("**********");
+
+ // número que mais se repete no array
+
+ function mostRepeats (numbers) {
+  let repeats = 0;
+  let numberRepeated = 0;
+  let indexOfNumberRepeated = 0;
+
+  for (let index in numbers) {
+    let verifyNumber = numbers[index];
+    for (let index2 in numbers) {
+      if (verifyNumber === numbers[index2]) {
+        repeats += 1;
+      }
+    }
+    if (repeats > numberRepeated) {
+      numberRepeated = repeats;
+      indexOfNumberRepeated = index;
+    }
+    repeats = 0;
+  }
+  return numbers[indexOfNumberRepeated];
+ }
+
+ console.log(mostRepeats([37, 21, 37, 37, 24, 37, 24, 21, 76, 37, 21]));
+
+ console.log("**************");
