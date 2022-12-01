@@ -88,3 +88,17 @@ console.log("************");
  console.log(mostRepeats([37, 21, 37, 37, 24, 37, 24, 21, 76, 37, 21]));
 
  console.log("**************");
+
+ // soma do número natural (1 até ele mesmo)
+
+ function sumAllNumbers (naturalNumber) {
+  let totalSum = 0;
+  for (let index = 1; index <= naturalNumber; index += 1) {
+    totalSum = totalSum + index;
+  }
+  return totalSum;
+ }
+
+ console.log(sumAllNumbers(37));
+
+ console.log("************");
