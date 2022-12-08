@@ -33,3 +33,18 @@ createPOfSectionCenter.id = 'paragraph-of-sectionCenter';
 createPOfSectionCenter.innerText = 'Aqui temos o texto do SectionCenter';
 
 sectionCenter.appendChild(createPOfSectionCenter);
+
+//
+
+const createSectionLeft = document.createElement('section');
+createSectionLeft.className = 'left-content';
+
+main.appendChild(createSectionLeft);
+
+//
+
+const createSectionRight = document.createElement('section');
+createSectionRight.className = 'right-content';
+
+main.appendChild(createSectionRight);
+
