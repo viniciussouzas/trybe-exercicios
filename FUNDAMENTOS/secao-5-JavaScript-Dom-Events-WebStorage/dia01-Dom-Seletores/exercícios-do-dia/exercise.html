@@ -1,66 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício</title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício</title>
+
+  <style>
+    main,
+    section {
+      border-color: black;
+      border-style: solid;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .main-content {
+      background-color: yellow;
+    }
+
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .main-content .center-content p {
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="title">Desafio - JavaEscripito</h1>
+  </header>
+  <main class="main-content">
+    <section class="center-content">
+      <p>Texto padrão do nosso site</p>
+      <p>-----</p>
+      <p>Trybe</p>
+    </section>
+  </main>
+  <script>
+    function changeCenterContent() {
+      let paragraph = document.getElementsByTagName('p');
+
+      paragraph[1].innerText = 'Me vejo daqui 2 anos, atuando como dev no mercado de trabalho e financeiramente estável';
+
+      paragraph[0].style.textTransform = 'uppercase'
+
+      paragraph[0].style.fontWeight = 'bold'
+    }
+    changeCenterContent();
+
+    function changeColorMainContent() {
+       let colorMain = document.getElementsByClassName('main-content')[0];
+
+      colorMain.style.backgroundColor = 'rgb(76,164,109)';
+    }
+    changeColorMainContent();
+
+    function changeColorCenterContent() { 
+      let colorCenter = document.getElementsByClassName('center-content')[0];
+
+      colorCenter.style.backgroundColor = 'white';
+    }
+    changeColorCenterContent();
+
+    function changeTitleText() {
+      let titleChange = document.getElementsByClassName('title')[0];
+
+      titleChange.innerText = 'Desafio JavaScript'
+    }
+    changeTitleText();
+  
     
-    <style>
-      main, section {
-        border-color: black;
-        border-style: solid;
+    function showContentsOfP() {
+      let showContent = document.getElementsByTagName('p');
+
+      for (let index = 0; index < showContent.length; index += 1) {
+      console.log(showContent[index].innerHTML);
       }
+    }
+    showContentsOfP();
 
-      .title {
-        text-align: center;
-      }
+  </script>
+</body>
 
-      .main-content {
-        background-color: yellow;
-      }
-
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin: 0 auto;
-      }
-
-      .main-content .center-content p {
-        font-style: italic;
-      }
-    </style>
-  </head>
-  <body>
-    <header> 
-      <h1 class="title">Desafio - JavaEscripito</h1>
-    </header>    
-    <main class="main-content">
-      <section class="center-content">
-        <p>Texto padrão do nosso site</p>
-        <p>-----</p>
-        <p>Trybe</p>
-      </section>
-    </main>
-    <script>
-      const changeCenterContent = document.getElementsByTagName('p');
-
-      changeCenterContent[0].style.textTransform = 'uppercase'
-
-      changeCenterContent[0].style.fontWeight = 'bold'
-
-      changeCenterContent[1].innerText = 'Me vejo daqui 2 anos, atuando como dev no mercado de trabalho e financeiramente estável';
-
-      const changeColorMainContent = document.getElementsByClassName('main-content')[0];
-      changeColorMainContent.style.backgroundColor = 'rgb(76,164,109)';
-
-      const changeColorCenterContent = document.getElementsByClassName('center-content')[0];
-      changeColorCenterContent.style.backgroundColor = 'white';
-
-      const changeTitleText = document.getElementsByClassName('title')[0];
-      changeTitleText.innerText = 'Desafio JavaScript'
-
-      const showContentsOfP = document.getElementsByTagName('p');
-      console.log(showContentsOfP.innerHTML);
-    </script>
-  </body>
 </html>
