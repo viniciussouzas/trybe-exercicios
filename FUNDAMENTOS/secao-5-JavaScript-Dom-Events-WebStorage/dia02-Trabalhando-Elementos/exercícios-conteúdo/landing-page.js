@@ -48,3 +48,12 @@ createSectionRight.className = 'right-content';
 
 main.appendChild(createSectionRight);
 
+//
+
+const sectionLeft = document.getElementsByClassName('left-content')[0];
+
+const createSmallImg = document.createElement('img');
+createSmallImg.className = 'small-image';
+createSmallImg.src = 'https://picsum.photos/200';
+
+sectionLeft.appendChild(createSmallImg);
