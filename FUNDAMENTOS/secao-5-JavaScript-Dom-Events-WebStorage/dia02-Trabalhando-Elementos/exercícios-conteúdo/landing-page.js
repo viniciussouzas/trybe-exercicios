@@ -57,3 +57,19 @@ createSmallImg.className = 'small-image';
 createSmallImg.src = 'https://picsum.photos/200';
 
 sectionLeft.appendChild(createSmallImg);
+
+//
+
+const sectionRight = document.getElementsByClassName('right-content')[0];
+
+const createUL = document.createElement('ul');
+createUL.id = 'unorded-list';
+
+const numbersArray = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+for (let index = 0; index < numbersArray.length; index += 1) {
+  const createLi = document.createElement('li');
+  createLi.innerHTML = numbersArray[index];
+  createUL.appendChild(createLi);
+  sectionRight.appendChild(createUL);
+}
