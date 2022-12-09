@@ -26,6 +26,10 @@ main.appendChild(createSectionCenter);
 
 //
 
+main.style.backgroundColor = 'green';
+
+//
+
 const sectionCenter = document.getElementsByClassName('center-content')[0];
 
 const createPOfSectionCenter = document.createElement('p');
@@ -73,14 +77,25 @@ const numbersArray = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 
 
 for (let index = 0; index < numbersArray.length; index += 1) {
   const createLi = document.createElement('li');
+  createLi.className = 'list-items';
   createLi.innerHTML = numbersArray[index];
   createUL.appendChild(createLi);
+
   sectionRight.appendChild(createUL);
 }
 
 //
 
+const ul = document.getElementById('unorded-list');
+
+ul.lastChild.remove();
+ul.lastChild.remove();
+
+//
+
 sectionRight.style.marginRight = 'auto';
+
+//
 
 for (let index = 1; index <= 3; index += 1) {
   const createTagsH3 = document.  createElement('h3');
