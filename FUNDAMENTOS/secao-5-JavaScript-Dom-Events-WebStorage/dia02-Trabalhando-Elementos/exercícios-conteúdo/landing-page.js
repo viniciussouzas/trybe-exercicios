@@ -73,3 +73,12 @@ for (let index = 0; index < numbersArray.length; index += 1) {
   createUL.appendChild(createLi);
   sectionRight.appendChild(createUL);
 }
+
+//
+
+for (let index = 1; index <= 3; index += 1) {
+  const createTagsH3 = document.  createElement('h3');
+  createTagsH3.className = 'description';
+
+  main.appendChild(createTagsH3);
+}
