@@ -3,7 +3,7 @@ const body = document.getElementById('body');
 //
 
 const createH1 = document.createElement('h1');
-createH1.id = 'title';
+createH1.className = 'title';
 createH1.innerText = 'TrybeTrip - Agência de Viagens';
 
 body.appendChild(createH1);
@@ -60,6 +60,10 @@ sectionLeft.appendChild(createSmallImg);
 
 //
 
+main.removeChild(sectionLeft);
+
+//
+
 const sectionRight = document.getElementsByClassName('right-content')[0];
 
 const createUL = document.createElement('ul');
@@ -76,9 +80,14 @@ for (let index = 0; index < numbersArray.length; index += 1) {
 
 //
 
+sectionRight.style.marginRight = 'auto';
+
 for (let index = 1; index <= 3; index += 1) {
   const createTagsH3 = document.  createElement('h3');
   createTagsH3.className = 'description';
 
   main.appendChild(createTagsH3);
 }
+
+//
+
