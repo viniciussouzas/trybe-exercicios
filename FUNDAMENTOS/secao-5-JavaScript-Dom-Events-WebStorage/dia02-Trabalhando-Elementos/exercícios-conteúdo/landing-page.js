@@ -3,7 +3,7 @@ const body = document.getElementById('body');
 //
 
 const createH1 = document.createElement('h1');
-createH1.id = 'title';
+createH1.className = 'title';
 createH1.innerText = 'TrybeTrip - Agência de Viagens';
 
 body.appendChild(createH1);
@@ -23,6 +23,10 @@ const createSectionCenter = document.createElement('section');
 createSectionCenter.className = 'center-content';
 
 main.appendChild(createSectionCenter);
+
+//
+
+main.style.backgroundColor = 'green';
 
 //
 
@@ -60,6 +64,10 @@ sectionLeft.appendChild(createSmallImg);
 
 //
 
+main.removeChild(sectionLeft);
+
+//
+
 const sectionRight = document.getElementsByClassName('right-content')[0];
 
 const createUL = document.createElement('ul');
@@ -69,7 +77,32 @@ const numbersArray = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 
 
 for (let index = 0; index < numbersArray.length; index += 1) {
   const createLi = document.createElement('li');
+  createLi.className = 'list-items';
   createLi.innerHTML = numbersArray[index];
   createUL.appendChild(createLi);
+
   sectionRight.appendChild(createUL);
 }
+
+//
+
+const ul = document.getElementById('unorded-list');
+
+ul.lastChild.remove();
+ul.lastChild.remove();
+
+//
+
+sectionRight.style.marginRight = 'auto';
+
+//
+
+for (let index = 1; index <= 3; index += 1) {
+  const createTagsH3 = document.  createElement('h3');
+  createTagsH3.className = 'description';
+
+  main.appendChild(createTagsH3);
+}
+
+//
+
