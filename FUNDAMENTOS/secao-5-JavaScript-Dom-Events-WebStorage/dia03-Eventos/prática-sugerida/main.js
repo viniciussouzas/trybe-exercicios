@@ -16,7 +16,7 @@ const addClassTech = event => {
     classTech[index].classList.remove('tech');
     event.target.className = 'tech';
   }
-}
+};
 
 firstLi.addEventListener('click', addClassTech);
 secondLi.addEventListener('click', addClassTech);
@@ -25,18 +25,35 @@ thirdLi.addEventListener('click', addClassTech);
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
-input.addEventListener('input', (event) => {
+const changeTech = event => {
   for (let index = 0; index < classTech.length; index += 1) {
-  classTech[index].innerText = event.target.value;
-  }
-});  
+    classTech[index].innerText = event.target.value;
+    }
+};
+
+input.addEventListener('input', changeTech);  
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
 
+const redirectPage = () => window.open('https://www.linkedin.com/in/vinicius-souzas/', '_blank');
+
+myWebpage.addEventListener('dblclick', redirectPage);
+
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+const changeColor = event => {
+  event.target.style.color = '#2fc18c';
+};
+
+const resetColor = event => {
+  event.target.style.color = 'white';
+};
+
+myWebpage.addEventListener('mouseover', changeColor);
+myWebpage.addEventListener ('mouseleave', resetColor);
 
 // Segue abaixo um exemplo do uso de event.target:
 
