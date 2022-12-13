@@ -25,6 +25,14 @@ const createDaysOfTheMonth = () => {
     numberDaysListItem.className = 'day';
     numberDaysListItem.innerHTML = numberDays;
 
+    if (numberDays === 24 || numberDays === 31) {
+      numberDaysListItem.className = 'day holiday';
+    } else if (numberDays === 4 || numberDays === 11 || numberDays === 18) {
+      numberDaysListItem.className = 'day friday';
+    } else if (numberDays === 25) {
+      numberDaysListItem.className = 'day friday holiday';
+    }
+
     decemberDaysList.appendChild(numberDaysListItem);
   };
 }
