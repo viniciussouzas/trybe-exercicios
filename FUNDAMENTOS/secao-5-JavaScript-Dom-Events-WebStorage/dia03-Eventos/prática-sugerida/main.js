@@ -25,11 +25,13 @@ thirdLi.addEventListener('click', addClassTech);
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
-input.addEventListener('input', (event) => {
+const changeTech = event => {
   for (let index = 0; index < classTech.length; index += 1) {
-  classTech[index].innerText = event.target.value;
-  }
-});  
+    classTech[index].innerText = event.target.value;
+    }
+} 
+
+input.addEventListener('input', changeTech);  
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
