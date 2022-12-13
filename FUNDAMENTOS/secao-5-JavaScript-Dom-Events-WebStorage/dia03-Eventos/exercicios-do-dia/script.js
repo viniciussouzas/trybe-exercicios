@@ -45,7 +45,7 @@ createDaysOfTheMonth();
 
 const buttonContainer = document.getElementsByClassName('buttons-container')[0];
 
-const createButton = (string) => {
+const createButtonHoliday = (string) => {
   const button = document.createElement('button');
   button.id = 'btn-holiday';
   button.innerHTML = string
@@ -53,7 +53,7 @@ const createButton = (string) => {
   buttonContainer.appendChild(button);
 }
 
-createButton('Feriados');
+createButtonHoliday('Feriados');
 
 //parte 3
 
@@ -72,3 +72,15 @@ const changeBackColor = () => {
 }
 
 buttonHoliday.addEventListener('click', changeBackColor);
+
+//parte 4
+
+const createButtonFriday = (string) => {
+  const button = document.createElement('button');
+  button.id = 'btn-friday';
+  button.innerHTML = string
+
+  buttonContainer.appendChild(button);
+}
+
+createButtonFriday('Sexta-feira');
