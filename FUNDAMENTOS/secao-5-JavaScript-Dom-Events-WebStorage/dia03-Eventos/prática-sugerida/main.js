@@ -16,7 +16,7 @@ const addClassTech = event => {
     classTech[index].classList.remove('tech');
     event.target.className = 'tech';
   }
-}
+};
 
 firstLi.addEventListener('click', addClassTech);
 secondLi.addEventListener('click', addClassTech);
@@ -29,13 +29,17 @@ const changeTech = event => {
   for (let index = 0; index < classTech.length; index += 1) {
     classTech[index].innerText = event.target.value;
     }
-} 
+};
 
 input.addEventListener('input', changeTech);  
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
+
+const redirectPage = () => window.open('https://www.linkedin.com/in/vinicius-souzas/', '_blank');
+
+myWebpage.addEventListener('dblclick', redirectPage);
 
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
