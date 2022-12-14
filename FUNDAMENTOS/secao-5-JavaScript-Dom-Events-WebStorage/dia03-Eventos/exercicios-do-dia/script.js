@@ -117,3 +117,17 @@ const zoomOutDays = event => {
 
 allDays.addEventListener('mouseover', zoomDays);
 allDays.addEventListener('mouseout', zoomOutDays);
+
+//parte 7
+
+const myTasks = document.getElementsByClassName('my-tasks')[0];
+
+const addTasks = task => {
+  const createTask = document.createElement('span');
+  createTask.className = 'tasks';
+  createTask.innerHTML = task;
+
+  myTasks.appendChild(createTask);
+}
+
+addTasks('Projeto');
