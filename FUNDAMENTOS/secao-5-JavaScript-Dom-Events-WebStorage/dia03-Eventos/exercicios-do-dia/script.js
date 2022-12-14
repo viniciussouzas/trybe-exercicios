@@ -89,10 +89,16 @@ createButtonFriday('Sexta-feira');
 
 const fridayDays = document.getElementsByClassName('friday');
 const buttonFriday = document.getElementById('btn-friday');
+const fridayArray = [4, 11, 18, 25];
 
 const changeTextFridays = () => {
   for (let index = 0; index < fridayDays.length; index += 1) {
-    fridayDays[index].style.backgroundColor = 'red';
+    if (fridayDays[index].innerText === 'SEXTOUU') {
+      fridayDays[index].innerText = fridayArray[index];
+    } else {
+      fridayDays[index].innerText = 'SEXTOUU'
+    }
   }
 }
-changeTextFridays();
+
+buttonFriday.addEventListener('click', changeTextFridays);
