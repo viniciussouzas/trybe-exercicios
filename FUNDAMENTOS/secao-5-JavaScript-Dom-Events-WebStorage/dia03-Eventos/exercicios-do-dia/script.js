@@ -89,10 +89,92 @@ createButtonFriday('Sexta-feira');
 
 const fridayDays = document.getElementsByClassName('friday');
 const buttonFriday = document.getElementById('btn-friday');
+const fridayArray = [4, 11, 18, 25];
 
 const changeTextFridays = () => {
   for (let index = 0; index < fridayDays.length; index += 1) {
-    fridayDays[index].style.backgroundColor = 'red';
+    if (fridayDays[index].innerText === 'SEXTOUU') {
+      fridayDays[index].innerText = fridayArray[index];
+    } else {
+      fridayDays[index].innerText = 'SEXTOUU'
+    }
   }
 }
-changeTextFridays();
+
+buttonFriday.addEventListener('click', changeTextFridays);
+
+//parte 6
+
+const allDays = document.getElementById('days');
+
+const zoomDays = event => {
+  event.target.style.fontSize = '40px';
+}
+
+const zoomOutDays = event => {
+  event.target.style.fontSize = '20px';
+}
+
+allDays.addEventListener('mouseover', zoomDays);
+allDays.addEventListener('mouseout', zoomOutDays);
+
+//parte 7
+
+const myTasks = document.getElementsByClassName('my-tasks')[0];
+
+const addTasks = task => {
+  const createTask = document.createElement('span');
+  createTask.innerHTML = task;
+
+  myTasks.appendChild(createTask);
+}
+
+addTasks('Projeto ');
+addTasks('Estudar ');
+
+//parte 8
+
+const addNote = (cor) => {
+  const createNote = document.createElement('div');
+  createNote.className = 'task';
+  createNote.style.backgroundColor = cor;
+
+  myTasks.appendChild(createNote);
+}
+
+addNote('blue');
+addNote('red');
+
+//parte 9
+
+const note = document.getElementsByClassName('task');
+
+const selectTask = (event) => {
+  for (let index = 0; index < note.length; index += 1) {
+    note[index].className = 'task';
+    event.target.className = 'task selected';
+  }
+}
+
+myTasks.addEventListener('click', selectTask);
+
+//parte 10
+
+const setDayColor = () => {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;
+  
+  days.addEventListener('click', (event) => {
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor; 
+      event.target.style.color = color;
+    } else if (eventTargetColor === taskColor) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+}
+
+setDayColor();
