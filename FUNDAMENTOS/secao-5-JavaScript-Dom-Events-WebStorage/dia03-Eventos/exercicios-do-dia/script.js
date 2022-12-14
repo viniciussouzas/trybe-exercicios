@@ -102,3 +102,18 @@ const changeTextFridays = () => {
 }
 
 buttonFriday.addEventListener('click', changeTextFridays);
+
+//parte 6
+
+const allDays = document.getElementById('days');
+
+const zoomDays = event => {
+  event.target.style.fontSize = '40px';
+}
+
+const zoomOutDays = event => {
+  event.target.style.fontSize = '20px';
+}
+
+allDays.addEventListener('mouseover', zoomDays);
+allDays.addEventListener('mouseout', zoomOutDays);
