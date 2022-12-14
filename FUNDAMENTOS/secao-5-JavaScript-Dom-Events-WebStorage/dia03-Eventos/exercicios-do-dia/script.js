@@ -124,10 +124,21 @@ const myTasks = document.getElementsByClassName('my-tasks')[0];
 
 const addTasks = task => {
   const createTask = document.createElement('span');
-  createTask.className = 'tasks';
   createTask.innerHTML = task;
 
   myTasks.appendChild(createTask);
 }
 
 addTasks('Projeto');
+
+//parte 8
+
+const addNote = (cor) => {
+  const createNote = document.createElement('div');
+  createNote.className = 'task';
+  createNote.style.backgroundColor = cor;
+
+  myTasks.appendChild(createNote);
+}
+
+addNote('blue');
