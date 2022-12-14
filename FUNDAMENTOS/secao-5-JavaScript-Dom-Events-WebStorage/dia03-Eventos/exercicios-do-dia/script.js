@@ -129,7 +129,8 @@ const addTasks = task => {
   myTasks.appendChild(createTask);
 }
 
-addTasks('Projeto');
+addTasks('Projeto ');
+addTasks('Estudar ');
 
 //parte 8
 
@@ -142,3 +143,17 @@ const addNote = (cor) => {
 }
 
 addNote('blue');
+addNote('red');
+
+//parte 9
+
+const note = document.getElementsByClassName('task');
+
+const selectTask = (event) => {
+  for (let index = 0; index < note.length; index += 1) {
+    note[index].className = 'task';
+    event.target.className = 'task selected';
+  }
+}
+
+myTasks.addEventListener('click', selectTask);
