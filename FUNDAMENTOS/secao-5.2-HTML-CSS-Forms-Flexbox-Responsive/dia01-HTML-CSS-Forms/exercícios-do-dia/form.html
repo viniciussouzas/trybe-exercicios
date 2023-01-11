@@ -7,13 +7,13 @@
   <title>TrybeTrip</title>
   <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
 </head>
-<body data-bs-theme="dark">
+<body class="bg-light">
   <form action="" method="get">
     <header>
-      <h1>Trybe Trip</h1>
+      <h1 class="bg-success border rounded text-light text-center py-2">Trybe Trip</h1>
     </header>
     <main>
-      <fieldset>
+      <fieldset class="mx-5">
         <br>
         <label for="full-name">Nome: <input class="form-control" type="text" minlength="10" maxlength="40" name="nome" id="full-name" placeholder="Digite seu nome aqui" required></label>
         <br>
@@ -31,7 +31,6 @@
         <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
         <textarea class="form-control" name="texto" id="text-area" cols="50" rows="6" maxlength="500" placeholder="Digite seu texto aqui"></textarea>
         <br>
-        <br>
         <p>Qual a melhor data para você realizar sua viagem?</p>
         <label for="date
         ">Data: <input type="date" name="data-de-viagem" id="date" required></label>
@@ -43,8 +42,10 @@
         <label for="checkbox2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. <input type="checkbox" name="uso-de-imagens" id="checkbox2" required></label>
       </fieldset>
       <br>
-      <button type="submit" id="btn-submit" class="btn btn-success">ENVIAR FORMULÁRIO</button>
-      <button type="reset" class="btn btn-warning">LIMPAR</button>
+      <div class="text-center my-2">
+        <button type="submit" id="btn-submit" class="btn btn-success mx-2">ENVIAR FORMULÁRIO</button>
+        <button type="reset" class="btn btn-warning mx-2">LIMPAR</button>
+      </div>
     </main>
   </form>
   <script src="./script.js"></script>
