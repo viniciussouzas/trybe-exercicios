@@ -1,0 +1,1 @@
+No dia 3, o exercício do dia está armazenado na minha pasta de projetos-trybe com o nome de exercise-tech-gallery.
