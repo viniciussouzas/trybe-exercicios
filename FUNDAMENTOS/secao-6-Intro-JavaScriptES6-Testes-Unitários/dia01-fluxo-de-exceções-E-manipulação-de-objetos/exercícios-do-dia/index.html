@@ -15,11 +15,14 @@
   <button id='button'>Somar</button>
   <p id='result'></p>
   <p id='error'></p>
-  <script>
 
+
+  <script>
     const verifyValues = (value1, value2) => {
       if (value1 === '' || value2 === '' || value1 === '' && value2 === '') {
         throw new Error('Por favor, preencha ambos os campos!')
+      } else if ( isNaN(value1) || isNaN(value2)|| isNaN(value1) && isNaN(value2)) {
+        throw new Error('Por favor, insira apenas números!')
       }
     }
     
