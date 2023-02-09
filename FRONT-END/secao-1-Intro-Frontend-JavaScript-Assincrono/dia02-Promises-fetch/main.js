@@ -1,6 +1,6 @@
-import Swal from "sweetalert2";
+import Swal from 'sweetalert2';
 
-// captura elementos 
+// captura elementos
 const img = document.querySelector('#image');
 const name = document.querySelector('#name');
 const button = document.querySelector('#button');
@@ -14,21 +14,20 @@ const MAX_HEROES = 800;
 const randomHeroe = () => Math.floor(Math.random() * MAX_HEROES);
 
 button.addEventListener('click', (event) => {
-
   event.preventDefault();
 
-  const id = randomHeroe()
+  const id = randomHeroe();
 
   fetch(`${BASE_URL}/${id}`)
     .then((result) => result.json())
     .then((data) => {
       img.src = data.image.url;
       name.innerHTML = data.name;
-  })
-  .catch((error) => Swal.fire({
-    title: 'Hero was not found',
-    text: error.message,
-    icon: 'error',
-    confirmButtonText: 'Cool',
-  }));
+    })
+    .catch((error) => Swal.fire({
+      title: 'Hero was not found',
+      text: error.message,
+      icon: 'error',
+      confirmButtonText: 'Cool',
+    }));
 });
