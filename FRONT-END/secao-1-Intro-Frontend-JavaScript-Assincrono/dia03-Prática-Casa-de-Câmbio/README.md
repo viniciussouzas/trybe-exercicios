@@ -1,0 +1,1 @@
+Os exercícios do dia 3, foram feitos no diretório de projetos trybe
