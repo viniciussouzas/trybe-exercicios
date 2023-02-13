@@ -1,0 +1,1 @@
+Exercícios do dia 4, foram feitos no diretório de projetos
