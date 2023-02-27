@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 class HelloWorld extends Component {
   render() {
-    return <span>Hello, world!</span>
+    const spanHello = <span>Hello, world!</span>;
+    
+    return spanHello;
   }
 }
 
