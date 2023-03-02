@@ -1,0 +1,1 @@
+Exercício prático de hoje foi feito no diretório de projetos da Trybe!
