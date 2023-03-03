@@ -1,12 +1,17 @@
 import { Component } from 'react';
+import Description from './Description';
+import InputCheck from './InputCheck';
+import InputName from './InputName';
+import Select from './Select';
 
 class Form extends Component {
   state = {
     select: '',
     nome: '',
     check: false,
-    description: ''
+    description: '',
   }
+
 
   handlerGlobal = ({ target }) => {
     const { name } = target;
@@ -21,21 +26,13 @@ class Form extends Component {
     return (
       <form className="form">
         <fieldset>
-          <label>
-            Selecione seu Estado:
-            <select name="select" value={this.state.select} onChange={this.handlerGlobal}>
-              <option>option1</option>
-              <option>option2</option>
-            </select>
-          </label>
+          <Select value={this.state.select} handlerGlobal={this.handlerGlobal}/>
 
-          <input name="nome" type="text" value={this.state.nome} onChange={this.handlerGlobal}/>
-          <input name="check" type="checkbox" value={this.state.check} onChange={this.handlerGlobal}/>
+          <InputName value={this.state.nome} handlerGlobal={this.handlerGlobal}/>
 
-          <label>
-            Adicione uma breve descrição sobre você:
-            <textarea name="description" value={this.state.description} onChange={this.handlerGlobal}/>
-          </label>
+          <InputCheck value={this.state.check} handlerGlobal={this.handlerGlobal}/>
+
+          <Description value={this.state.description} handlerGlobal={this.handlerGlobal}/>
         </fieldset>
       </form>
     )
