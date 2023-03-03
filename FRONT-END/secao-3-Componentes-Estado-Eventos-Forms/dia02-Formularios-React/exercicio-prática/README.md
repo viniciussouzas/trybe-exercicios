@@ -1,0 +1,1 @@
+O exercício prático do dia foi feito no diretório de projetos da Trybe.
