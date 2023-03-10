@@ -1,0 +1,1 @@
+O exercício de fixação react-router-exercise foi feito no diretório de projetos Trybe.
