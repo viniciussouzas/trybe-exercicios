@@ -1,0 +1,1 @@
+O exercício do dia foi feito no diretório de projetos da Trybe, com o nome exercise-to-do-list-rtl;
