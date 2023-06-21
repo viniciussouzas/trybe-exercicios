@@ -1,0 +1,1 @@
+As práticas sugeridas desse conteúdo foram feitos num repositório próprio, no diretório de projetos-trybe
